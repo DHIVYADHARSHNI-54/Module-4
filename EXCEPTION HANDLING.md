@@ -23,12 +23,23 @@ To create a Python program that prompts the user for a list of grades separated 
 ### PROGRAM
 
 ```
-Reg.No
-Name
+Reg.No:212223060054
+Name:DHIVYA DHARSHNI.B
 Add Your Code Here
+user_input = input()
+grades_str = user_input.split(',')
+
+try:
+    grades = [int(g) for g in grades_str]
+    print(grades)
+except ValueError:
+    print("The grades you entered were in an invalid format.")
+    print(grades_str)
 
 ```
 
 ### OUTPUT
+<img width="1262" height="248" alt="image" src="https://github.com/user-attachments/assets/3d2d0422-f462-41c6-b24c-0bd68c6c7e37" />
 
 ### RESULT
+Thus, a Python program that prompts the user for a list of grades separated by commas, splits the string into individual grades, and uses exception handling to inform the user if the values they entered cannot be converted to integers are verified.
